@@ -14,7 +14,7 @@ export async function authMiddleware(event: any) {
   }
 
   const token = authHeader.replace('Bearer ', '')
-  const userPayload = verifyToken(token)
+  const userPayload = verifyToken(token) 
 
   if (!userPayload) {
     throw createError({
@@ -43,3 +43,5 @@ export async function authMiddleware(event: any) {
   // Adicionar usuário ao contexto
   event.context.user = user
 }
+
+//resolve a autenticação.

@@ -39,7 +39,10 @@ export default defineConfig((/* ctx */) => {
       open: true, // opens browser window automatically
     },
     framework: {
-      config: {},
+      config: {
+        notify: { position: 'bottom' }
+      },
+      iconSet: 'material-icons',
       plugins: [],
     },
     animations: [],

@@ -51,3 +51,6 @@ export default defineEventHandler(async (event) => {
     token
   }
 })
+
+//TODO: alterar para que o login seja feito pelo front/instagram.
+//TODO: remover password do banco e usar o id do instagram para autenticar.
